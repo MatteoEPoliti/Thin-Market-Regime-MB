@@ -10,24 +10,14 @@ using TERNA, GME and ENTSO-E data (Jan–Aug 2025).
 
 Balancing prices in the Italian MB show a sharp volatility spike in the
 **[−50, +50] MWh zone** of net imbalance volume — a *thin-market regime*
-where individual players lose price-taker status. Regime switches of
-roughly **130 €/MWh** occur at the zero-crossing (from ~200 €/MWh to
-~70 €/MWh depending on sign).
+where individual players should adapt their bidding strategy to the 
+higher competitiveness that arises. Regime switches of roughly **130 €/MWh** 
+occur at the zero-crossing (from ~200 €/MWh to ~70 €/MWh depending on sign).
 
 A global linear model fits the data with an RMSE/std ratio close to 1 —
 no better than the unconditional mean. Regime-segmented evaluation,
 by contrast, reveals structure invisible to the global fit, and forms
 the empirical core of my Master's thesis in Energy Engineering.
-
----
-
-## Why it matters
-
-Players whose imbalance brings them into the thin zone face structurally
-different settlement prices from those who stay outside it. A forecasting
-or strategy framework that ignores this non-linearity is mis-specified
-by construction — not by noise. The finding motivates the regime-based
-architecture of the full thesis.
 
 ---
 
